@@ -1,5 +1,5 @@
 {
-"viewportWidth": 1280,
+"viewportWidth": 1366,
 "viewportHeight": 980,
 "testFiles": "**/*.{feature,features}",
 "baseUrl": "https://shop.samsung.com/br/",
