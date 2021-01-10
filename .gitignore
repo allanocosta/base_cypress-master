@@ -1,0 +1,6 @@
+node_modules/*
+log/*
+cypress/fixtures/*
+.DS_Store
+cypress/screenshots/
+cypress/videos/

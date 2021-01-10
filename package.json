@@ -1,0 +1,32 @@
+{
+  "name": "cypress-cucumber",
+  "version": "1.0.0",
+  "description": "cypress with cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "cypress run --browser chrome --record --key 63472227-3522-4076-9939-ba763d6cb76a"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "cypress",
+    "cucumber",
+    "testing"
+  ],
+  "author": "",
+  "bugs": {},
+  "url": "",
+  "homepage": "",
+  "dependencies": {
+    "faker-br": "^0.3.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/steps"
+  },
+  "devDependencies": {
+    "cypress": "^6.2.1",
+    "cypress-cucumber-preprocessor": "^2.5.0"
+  }
+}

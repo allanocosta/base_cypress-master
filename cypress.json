@@ -1,0 +1,10 @@
+{
+"viewportWidth": 1280,
+"viewportHeight": 980,
+"testFiles": "**/*.{feature,features}",
+"baseUrl": "https://shop.samsung.com/br/",
+"videoCompression": false,
+"chromeWebSecurity": false,
+"defaultCommandTimeout": 10000,
+"projectId": "mxpoi6"
+}
