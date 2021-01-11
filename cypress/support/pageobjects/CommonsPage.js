@@ -24,6 +24,7 @@ class CommonsPage {
     clicarCloseNotifications() {
         cy.get(commonsElements.closeNotifications()).click();
     };
+    
     clicarBotaoAccount() {
         cy.get(commonsElements.botaoAccount()).click();
     };

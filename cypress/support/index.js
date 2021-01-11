@@ -30,10 +30,6 @@ afterEach(() => {
   });
 })
 
-
-
-
-
 //beforeEach(() => {
 //const sizes = [ [1280, 980], 'samsung-s10']
 
@@ -51,3 +47,5 @@ afterEach(() => {
 // patch Cypress top.onerror
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+require('cypress-xpath')
