@@ -14,3 +14,8 @@ When("usuario clica no botao calcular", () => {
 Then("usuario devera visualizar o resultado do calculo", () => {
 	pdpPage.visualizarCalculoFrete();
 });
+
+
+When("usuario clica em adicionar ao carrinho", () => {
+	pdpPage.clicarBotaoAddCartPrice();
+});

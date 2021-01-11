@@ -1,11 +1,16 @@
-#@LoginCorreto
+@LoginCorreto
 Feature: Login site Samsung
 
     Como usuario, eu quero realizar o login com sucesso na loja Samsung
 
+    #Background: Acessar a home do site Shop Samsung e fechar a notificao e cookies
+    #   Given usuario acessa o site Shop Samsung
+    #  And usuario fecha o banner de notificacoes se estiver visivel
+    # And usuario fecha o banner de cookies se estiver visivel
+
     Scenario Outline: Logar no site Shop Samsung e visualizar o Menu My Accont
         Given usuario acessa o site Shop Samsung
-        When usuario fecha o banner de notificacoes se estiver visivel
+        And usuario fecha o banner de notificacoes se estiver visivel
         And usuario fecha o banner de cookies se estiver visivel
         When usuario clica no botao Account
         And usuario informa um email <email> correto
