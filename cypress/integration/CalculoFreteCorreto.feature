@@ -12,7 +12,7 @@ Feature: Calculo de frete da PDP
         And usuario vai na subcategoria <subCategoria>
         And usuario clica na sub subcategoria <subSubCategoria>
         When usuario clica no produto <productEan> da galeria
-        When usuario informa o codigo postal <codPostal> para calcular o frete
+        When usuario informa um codigo postal <codPostal> para calcular o frete
         And usuario clica no botao calcular
         Then usuario devera visualizar o resultado do calculo
 
