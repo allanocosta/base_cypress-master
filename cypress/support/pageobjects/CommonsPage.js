@@ -1,8 +1,10 @@
 /// <reference types="Cypress" />
 
 import CommonsElements from '../elements/CommonsElements'
+import HomeElements from '../elements/HomeElements'
 
 const commonsElements = new CommonsElements
+const homeElements = new HomeElements
 
 class CommonsPage {
     mouseOverInformatica(categoria) {
@@ -10,18 +12,16 @@ class CommonsPage {
     }
 
     clicarCloseCookies() {
-        if (cy.get(homeElements.closeCookies()) == true) {
-            cy.get(homeElements.closeCookies()).click()
-        }
+            cy.get(commonsElements.closeCookies()).click()
     }
 
     clicarCloseNotifications() {
-        cy.get(homeElements.closeNotifications()).click()
+        cy.get(commonsElements.closeNotifications()).click()
     }
 
     // Clica no elemento que acessa a página de account do site
     clicarBotaoAccount() {
-        cy.get(homeElements.botaoAccount()).click()
+        cy.get(commonsElements.botaoAccount()).click()
     }
 }
 

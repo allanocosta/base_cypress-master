@@ -1,4 +1,4 @@
-@focus @CalculoFreteCorreto
+@CalculoFreteCorreto
 Feature: Calculo de frete da PDP
 
     Como usuario, eu quero acessar a PDP do produto LC27RG50FQLXZD
@@ -6,6 +6,7 @@ Feature: Calculo de frete da PDP
 
     Scenario Outline: Acessar a PDP du produto LC27RG50FQLXZD e calcular o frete para o CEP 26261220
         Given usuario acessa o site Shop Samsung
+        And usuario fecha o banner de notificacoes se estiver visivel
         And usuario fecha o banner de cookies se estiver visivel
         When usuario vai na categoria <categoria>
         And usuario vai na subcategoria <subCategoria>

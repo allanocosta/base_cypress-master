@@ -40,7 +40,7 @@ class CommonsElements {
     produtoGaleria = (productEan) => { return '//div[@id="ProductEan"]/div[.='; productEan; ']' }
 
     //FRAMES
-    closeCookies = () => { return 'div[id="banner-cookie"] button[class*="x-closeBtnBanner"]' }
+    closeCookies = () => { return '.acupula-samsung-store-0-x-closeBtnBanner > span' }
     closeNotifications = () => { return '#onesignal-slidedown-cancel-button' }
 }
 
