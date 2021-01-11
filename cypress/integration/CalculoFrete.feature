@@ -11,11 +11,11 @@ Feature: Calculo de frete da PDP
         When usuario vai na categoria <categoria>
         And usuario vai na subcategoria <subCategoria>
         And usuario clica na sub subcategoria <subSubCategoria>
-        When usuario clica no produto <produto>
+        When usuario clica no produto <produto> da galeria
         And usuario informa o codigo postal <codPostal> para calcular o frete
         And usuario clica no botao calcular
         Then usuario devera visualizar o resultado do calculo
 
         Examples:
-            | categoria   |
-            | Informática |
+            | categoria   | subCategoria | subSubCategoria | produto         | codPostal |
+            | Informática | Monitores    | Monitor Gamer   | LC27RG50FQLXZDa | 26261220  |

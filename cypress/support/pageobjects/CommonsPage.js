@@ -1,28 +1,32 @@
 /// <reference types="Cypress" />
 
-import CommonsElements from '../elements/CommonsElements'
-import HomeElements from '../elements/HomeElements'
+import CommonsElements from '../elements/CommonsElements';
 
-const commonsElements = new CommonsElements
-const homeElements = new HomeElements
+const commonsElements = new CommonsElements;
 
 class CommonsPage {
-    mouseOverInformatica(categoria) {
-        cy.get(commonsElements.categorias(categoria)).trigger('mouseover')
-    }
+    mouseOverCategoria(categoria) {
+        cy.get(commonsElements.categorias(categoria)).trigger('mouseover');
+    };
+
+    mouseOverSubCategoria(subCategoria) {
+        cy.get(commonsElements.subCategorias(subCategoria)).trigger('mouseover');
+    };
+
+    clicarSubSubCategoria(subSubCategoria) {
+        cy.get(commonsElements.subSubCategorias(subSubCategoria)).click();
+    };
 
     clicarCloseCookies() {
-            cy.get(commonsElements.closeCookies()).click()
-    }
+        cy.get(commonsElements.closeCookies()).click();
+    };
 
     clicarCloseNotifications() {
-        cy.get(commonsElements.closeNotifications()).click()
-    }
-
-    // Clica no elemento que acessa a página de account do site
+        cy.get(commonsElements.closeNotifications()).click();
+    };
     clicarBotaoAccount() {
-        cy.get(commonsElements.botaoAccount()).click()
-    }
-}
+        cy.get(commonsElements.botaoAccount()).click();
+    };
+};
 
-export default CommonsPage
+export default CommonsPage;

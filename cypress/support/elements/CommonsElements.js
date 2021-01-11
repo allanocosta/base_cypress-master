@@ -1,47 +1,50 @@
 class CommonsElements {
     //HEADER
-    logoSamsung = () => { return 'a[class="acupula-samsung-store-0-x-gnb__logo"]' }
+    logoSamsung = () => { return 'a[class="acupula-samsung-store-0-x-gnb__logo"]' };
 
     categorias = (categoria) => {
         switch (categoria) {
             case "Telefonia":
-                return 'a[data-omni="TELEFONIA"] span'
-                break
+                return 'a[data-omni="TELEFONIA"] span';
             case "Tablets":
-                return 'a[data-omni="TABLETS"] span'
-                break
+                return 'a[data-omni="TABLETS"] span';
             case "TV e Áudio":
-                return 'a[data-omni="TV E ÁUDIO"] span'
-                break
+                return 'a[data-omni="TV E ÁUDIO"] span';
             case "Eletrodoméstico":
-                return 'a[data-omni="ELETRODOMÉSTICOS"] span'
-                break
+                return 'a[data-omni="ELETRODOMÉSTICOS"] span';
             case "Informática":
-                return 'a[data-omni="INFORMÁTICA"] span'
-                break
-        }
-    }
-
-    categoriaTelefonia = () => { return 'a[data-omni="TELEFONIA"] span' }
-    categoriaTablets = () => { return 'a[data-omni="TABLETS"] span' }
-    categoriaTvAudio = () => { return 'a[data-omni="TV E ÁUDIO"] span' }
-    categoriaEletrodomesticos = () => { return 'a[data-omni="ELETRODOMÉSTICOS"] span' }
-    categoriaInformatica = () => { return 'a[data-omni="INFORMÁTICA"] span' }
-    botaoAccount = () => { return '#user-bold > path' }
-    botaoMiniCart = () => { return 'li [class*="minicartContainer"] span[class="vtex-minicart-2-x-minicartIconContainer gray relative"]' }
-
+                return 'a[data-omni="INFORMÁTICA"] span';
+        };
+    };
     //SUBCATEGORIAS
-    subCategMonitores = () => { return 'span[data-omni="informática:monitores"]' }
-
+    subCategorias = (subCategoria) => {
+        switch (subCategoria) {
+            case "Computadores":
+                return 'span[data-omni="informática:computadores"]';
+            case "Monitores":
+                return 'span[data-omni="informática:monitores"]';
+        };
+    };
     //SUB SUBCATEGORIAS
-    subSubCategMonitorGamer = () => { return 'a[data-omni="informática:monitores:monitor gamer"]' }
+    subSubCategorias = (subSubCategoria) => {
+        switch (subSubCategoria) {
+            case "Monitor Gamer":
+                return 'a[data-omni="informática:monitores:monitor gamer"]';
+            case "Monitor 4K":
+                return 'a[data-omni="informática:monitores:monitor 4k"]';
+            case "Monitor Curvo":
+                return 'a[data-omni="informática:monitores:monitor curvo"]';
+            case "Monitor 4K":
+                return 'a[data-omni="informática:monitores:ver todos"]';
+        };
+    };
 
-    //GALERIA DE ITENS
-    produtoGaleria = (productEan) => { return '//div[@id="ProductEan"]/div[.='; productEan; ']' }
+    botaoAccount = () => { return '#user-bold > path' };
+    botaoMiniCart = () => { return 'li [class*="minicartContainer"] span[class="vtex-minicart-2-x-minicartIconContainer gray relative"]' };
 
     //FRAMES
-    closeCookies = () => { return '.acupula-samsung-store-0-x-closeBtnBanner > span' }
-    closeNotifications = () => { return '#onesignal-slidedown-cancel-button' }
-}
+    closeCookies = () => { return '.acupula-samsung-store-0-x-closeBtnBanner > span' };
+    closeNotifications = () => { return '#onesignal-slidedown-cancel-button' };
+};
 
-export default CommonsElements
+export default CommonsElements;
