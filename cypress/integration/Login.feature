@@ -13,6 +13,7 @@ Feature: Login site Samsung
         And usuario fecha o banner de notificacoes se estiver visivel
         And usuario fecha o banner de cookies se estiver visivel
         When usuario clica no botao Account
+        And usuario deve visualizar o botao Entrar
         And usuario informa um email <email> correto
         And usuario informa uma senha <senha> correta
         When usuario clica no botao Entrar
