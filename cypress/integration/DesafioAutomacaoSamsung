@@ -7,7 +7,7 @@ Feature: Login site Samsung
         Given usuario acessa o site Shop Samsung
         And usuario fecha o banner de notificacoes se estiver visivel
         And usuario fecha o banner de cookies se estiver visivel
-        
+
     @LoginCorreto
     Scenario Outline: Logar no site Shop Samsung e visualizar o Menu My Accont
         When usuario clica no botao Account
@@ -20,12 +20,12 @@ Feature: Login site Samsung
             | email                   | senha        |
             | allan.costa@acct.global | gNYqzE4#gpnq |
 
-@CalculoFreteCorreto
 Feature: Calculo de frete da PDP
 
     Como usuario, eu quero acessar a PDP do produto LC27RG50FQLXZD
     Para poder realizar o calculo do frete para o CEP 26.261-220
 
+    @CalculoFreteCorreto
     Scenario Outline: Acessar a PDP du produto LC27RG50FQLXZD e calcular o frete para o CEP 26261220
         When usuario vai na categoria <categoria>
         And usuario vai na subcategoria <subCategoria>
@@ -39,12 +39,12 @@ Feature: Calculo de frete da PDP
             | categoria   | subCategoria | subSubCategoria | productEan     | codPostal |
             | Informática | Monitores    | Monitor Gamer   | LC27RG50FQLXZD | 26261220  |
 
-@AddProdCartPdp
 Feature: Adiciona um produto ao carrinho via PDP
 
     Como usuario, eu quero acessar a PDP do produto LC27RG50FQLXZD
     Para poder adiciona-lo ao carrinho de compras
 
+    @AddProdCartPdp
     Scenario Outline: Adicionar o produto LC27RG50FQLXZD no carrinho de compras via PDP
         When usuario vai na categoria <categoria>
         And usuario vai na subcategoria <subCategoria>
