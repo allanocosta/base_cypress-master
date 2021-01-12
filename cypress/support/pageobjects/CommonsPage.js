@@ -18,13 +18,13 @@ class CommonsPage {
     };
 
     clicarCloseCookies() {
-        cy.get(commonsElements.closeCookies()).click();
+        cy.get(commonsElements.closeCookies).click();
     };
 
     clicarCloseNotifications() {
         cy.get(commonsElements.closeNotifications()).click();
     };
-    
+
     clicarBotaoAccount() {
         cy.get(commonsElements.botaoAccount()).click();
     };
