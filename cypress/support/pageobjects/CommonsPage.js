@@ -18,11 +18,19 @@ class CommonsPage {
     };
 
     clicarCloseCookies() {
-        cy.get(commonsElements.closeCookies).click();
+        cy.get(commonsElements.closeCookies).then($cookies => {
+            if($cookies.is(':visible')) {
+                cy.get(commonsElements.closeCookies).click();
+            };
+        });
     };
 
     clicarCloseNotifications() {
-        cy.get(commonsElements.closeNotifications()).click();
+        cy.get(commonsElements.closeNotifications).then($element => {
+            if($element.is(':visible')) {
+                cy.get(commonsElements.closeNotifications).click();
+            };
+        });
     };
 
     clicarBotaoAccount() {

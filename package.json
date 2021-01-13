@@ -4,7 +4,7 @@
   "description": "cypress with cucumber",
   "main": "index.js",
   "scripts": {
-    "cypress:open":"cypress open",
+    "cypress:open": "cypress open",
     "test:chrome": "cypress run --browser chrome --record --key 63472227-3522-4076-9939-ba763d6cb76a"
   },
   "repository": {
