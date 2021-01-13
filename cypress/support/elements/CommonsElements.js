@@ -43,8 +43,8 @@ class CommonsElements {
     botaoMiniCart = () => { return 'li [class*="minicartContainer"] span[class="vtex-minicart-2-x-minicartIconContainer gray relative"]' };
 
     //FRAMES
+    closeNotifications = () => { return 'button[id=onesignal-slidedown-cancel-button]' };
     closeCookies = () => { return '.acupula-samsung-store-0-x-closeBtnBanner > span' };
-    closeNotifications = () => { return '#onesignal-slidedown-cancel-button' };
 };
 
 export default CommonsElements;
