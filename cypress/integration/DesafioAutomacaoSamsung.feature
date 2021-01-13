@@ -1,7 +1,10 @@
 @DesafioAutomacao
-Feature: Login site Samsung
+Feature: Login, calculo de frete e adicao de produto ao Cart
 
-    Como usuario, eu quero realizar o login com sucesso na loja Samsung
+    Como usuario eu quero:
+    Realizar o login com sucesso na loja Samsung;
+    Acessar a PDP do produto LC27RG50FQLXZD para poder realizar o calculo do frete para o CEP 26.261-220;
+    Acessar a PDP do produto LC27RG50FQLXZD para poder adiciona-lo ao carrinho de compras;
 
     Background: Acessar a home do site Shop Samsung e fechar a notificao e cookies
         Given usuario acessa o site Shop Samsung
@@ -20,11 +23,6 @@ Feature: Login site Samsung
             | email                   | senha        |
             | allan.costa@acct.global | gNYqzE4#gpnq |
 
-Feature: Calculo de frete da PDP
-
-    Como usuario, eu quero acessar a PDP do produto LC27RG50FQLXZD
-    Para poder realizar o calculo do frete para o CEP 26.261-220
-
     @CalculoFreteCorreto
     Scenario Outline: Acessar a PDP du produto LC27RG50FQLXZD e calcular o frete para o CEP 26261220
         When usuario vai na categoria <categoria>
@@ -38,11 +36,6 @@ Feature: Calculo de frete da PDP
         Examples:
             | categoria   | subCategoria | subSubCategoria | productEan     | codPostal |
             | Informática | Monitores    | Monitor Gamer   | LC27RG50FQLXZD | 26261220  |
-
-Feature: Adiciona um produto ao carrinho via PDP
-
-    Como usuario, eu quero acessar a PDP do produto LC27RG50FQLXZD
-    Para poder adiciona-lo ao carrinho de compras
 
     @AddProdCartPdp
     Scenario Outline: Adicionar o produto LC27RG50FQLXZD no carrinho de compras via PDP
